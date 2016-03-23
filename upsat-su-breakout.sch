@@ -57,19 +57,11 @@ $EndComp
 Wire Wire Line
 	3300 2750 4200 2750
 Wire Wire Line
-	3300 2850 4200 2850
-Wire Wire Line
-	3300 2950 4200 2950
-Wire Wire Line
 	3300 3050 4200 3050
 Wire Wire Line
 	3300 3150 4200 3150
 Text Label 4200 2750 2    60   ~ 0
 GND
-Text Label 4200 2850 2    60   ~ 0
-MNLP_RX_SCN
-Text Label 4200 2950 2    60   ~ 0
-MNLP_TX_SCN
 Text Label 4200 3050 2    60   ~ 0
 BIAS_DISARM_GND
 Text Label 4200 3150 2    60   ~ 0
@@ -376,6 +368,14 @@ BIAS_DISARM
 NoConn ~ 5550 3650
 NoConn ~ 5550 4350
 NoConn ~ 6050 4350
-NoConn ~ 4200 2850
-NoConn ~ 4200 2950
+Wire Wire Line
+	3300 2950 3750 2950
+Wire Wire Line
+	3750 2950 3750 2750
+Connection ~ 3750 2750
+Wire Wire Line
+	3300 2850 3550 2850
+Wire Wire Line
+	3550 2850 3550 2750
+Connection ~ 3550 2750
 $EndSCHEMATC
